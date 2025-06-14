@@ -19,13 +19,13 @@ const FormBuilderPage = () => {
     const renderCurrentView = () => {
         switch(currentView) {
             case 'builder':
-                return <FormBuilder/>
+                return <FormBuilder form={form}/>
 
             case 'branching':
                 return <BranchingLogicPanel/>
             
             case 'preview':
-                return <FormPreview/>
+                return <FormPreview form={form}/>
         }
     }
 
